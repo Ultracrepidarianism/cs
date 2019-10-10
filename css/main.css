@@ -1,0 +1,82 @@
+body{
+    height: 100%;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: 10px;
+}
+.navbar-default {
+    background-color: black;
+    border: red 2px solid;
+    width: auto;
+    align-content: center;
+    align-items: center;
+}
+.flex-container
+{
+display: flex;
+flex-wrap: nowrap;
+}
+.logo
+{
+    width: 75px;
+    height: 75px;
+}
+.image
+{
+    display: block;
+    width: auto;
+    text-align: center;
+}
+.jumbotron
+{
+    width: 100%;
+    margin: 30px 10px 10px;
+    color : white;
+    background-color: rgba(40,40,40,0.6);
+}
+.alinks{
+    color: white;
+}
+.active{
+    color:red;
+}
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+}
+.nav a{
+    padding: 10px;
+    margin:0;
+}
+nav a:hover{
+    color:darkred;
+}
+main{
+    margin-top:7%;
+}
+.hidden{
+    display: none;
+}
+.Doom{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(40,40,40,0.6);
+}
+::-webkit-scrollbar-thumb {
+    background: darkred;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #560000;
+}

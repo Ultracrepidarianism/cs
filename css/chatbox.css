@@ -1,0 +1,12 @@
+#ChatBox{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.erreur{
+    background-color: #f8d7da;
+    border: indianred solid;
+    border-radius: 30px;
+    color: black;
+    margin-left: 10px;
+    padding: 5px;
+}

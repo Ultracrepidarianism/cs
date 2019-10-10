@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Culte Sataniste</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/userlogin.css">
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css">
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.blackberry.css">
+    <script src="https://kit.fontawesome.com/e3961f43af.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.1.js"></script>
+    <script defer src="js/main.js"></script>
+    <script src="jqwidgets/jqxcore.js"></script>
+    <script src="jqwidgets/jqx-all.js"></script>
+    <script src="js/boutique.js"></script>
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.darkblue.css">
+    <link rel="stylesheet" href="css/boutique.css">
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 usermenu" style="margin-top: 1%;">
+            <button onclick="EtendreMenuUtilisateur()" style="border-radius: 50%; margin: 10px; box-shadow: none"><i class="far fa-user usermenubutton"></i></button>
+            <form class="hidden" name="Connexion" action="#">
+                <label>Nom d'utilisateur:</label>
+                <input type="text" name="identifiant" placeholder="NullExceptionArg">
+                <label>Mot de passe:</label>
+                <input type="password" name="mot de passe" placeholder="Abcdef1234">
+                <input type="submit" value="Se connecter" style="margin-top: 5px; background-color: darkred; border: none; color: white; border-radius: 2px">
+                <a href="unlucky.html"style="display: block; text-align: center">Mot de passe oublié ?</a>
+                <a href="inscription.html" style="display: block; text-align: center">s'inscrire</a>
+            </form>
+        </div>
+        <div class="col-sm-8">
+            <div class="row justify-content-center order-0">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="navbar-brand h4 alinks" href="membres.html">Membres</a></li>
+                            <li><a class="navbar-brand h4 alinks" href="chatbox.html">ChatBox</a></li>
+                            <li><a href="index.html"><img class="logo" src="images/pentacle.png" style="margin-right: 10px"/></a></li>
+                            <li><a class="navbar-brand h4 alinks" href="contact.html">Contact</a></li>
+                            <li><a class="navbar-brand h4 alinks" href="#">Boutique</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container" style="color : white; background-color: rgba(40,40,40,0.6);padding: 25px 0;border-radius: 25px;">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <div class="PhotoGallery" style="border-radius: 25px;">
+                            <img class="photo" src="images/Boutique/Satanic_Bag_1.jpg" alt="Sac satanique">
+                            <img class="photo" src="images/Boutique/Satanic_bag_2.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Candle_1_Baphomet.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Candle_2.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Pendant_1_PurpleSilverBlack.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Pendant_2.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Pendant_3.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_pendant_4.jpeg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_hoodie.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_hoodie_2.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Shirt_1.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Shirt_3.jpg" alt="Sac satanique" >
+                            <img class="photo" src="images/Boutique/Satanic_Shirt_4.jpg" alt="Sac satanique" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="menuFiltre">
+                    <select id="menu" name="Filtre">
+                        <option value="Tous">Tous</option>
+                        <option value="Bijoux/Accessoires">Bijoux/Accessoires</option>
+                        <option value="Vêtements">Vêtements</option>
+                        <option value="Chandelles">Chandelles</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="container justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="ObjetAVendre Bijoux/Accessoires">
+                        <img class="photoVente" src="images/Boutique/Satanic_Bag_1.jpg" alt="Sac satanique">
+                        <h3>Sac pentagramme</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Bijoux/Accessoires">
+                        <img class="photoVente" src="images/Boutique/Satanic_bag_2.jpg" alt="Sac satanique">
+                        <h3>Sac de Bahamut</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Bijoux/Accessoires">
+                        <img class="photoVente" src="images/Boutique/Satanic_Pendant_1_PurpleSilverBlack.jpg" alt="Sac satanique">
+                        <h3>Pendentif démoniaque bleu-argent</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Bijoux/Accessoires">
+                        <img class="photoVente" src="images/Boutique/Satanic_Pendant_2.jpg" alt="Sac satanique">
+                        <h3>Pendentif démonique doré-argent</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Bijoux/Accessoires">
+                        <img class="photoVente" src="images/Boutique/Satanic_Pendant_3.jpg" alt="Sac satanique">
+                        <h3>Pendentif de Bahamut stylisé en argent</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Bijoux/Accessoires">
+                        <img class="photoVente" src="images/Boutique/Satanic_pendant_4.jpeg" alt="Sac satanique">
+                        <h3>Pendentif pentagramme</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Vêtements">
+                        <img class="photoVente" src="images/Boutique/Satanic_Shirt_1.jpg" alt="Sac satanique">
+                        <h3>Chandail</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Vêtements">
+                        <img class="photoVente" src="images/Boutique/Satanic_Shirt_2.jpg" alt="Sac satanique">
+                        <h3>Chandail</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Vêtements">
+                        <img class="photoVente" src="images/Boutique/Satanic_Shirt_3.jpg" alt="Sac satanique">
+                        <h3>Chandail</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Vêtements">
+                        <img class="photoVente" src="images/Boutique/Satanic_Shirt_4.jpg" alt="Sac satanique">
+                        <h3>Chandail</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Vêtements">
+                        <img class="photoVente" src="images/Boutique/Satanic_hoodie.jpg" alt="Sac satanique">
+                        <h3>Chandail</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Vêtements">
+                        <img class="photoVente" src="images/Boutique/Satanic_hoodie_2.jpg" alt="Sac satanique">
+                        <h3>Chandail</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Chandelles">
+                        <img class="photoVente" src="images/Boutique/Satanic_Candle_1_Baphomet.jpg" alt="Sac satanique">
+                        <h3>Chandelle</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+
+                    <div class="ObjetAVendre Chandelles">
+                        <img class="photoVente" src="images/Boutique/Satanic_Candle_2.jpg" alt="Sac satanique">
+                        <h3>Chandelle</h3>
+                        <hr style="border: white solid 1px">
+                        <p class="hidden">
+                            Produit: <br>
+                            Taille: <br>
+                            Couleur: <br>
+                            Catégorie: <br>
+                        </p>
+                        <div class="description" style="display: block; width: 100%; text-align: center">En savoir plus</div>
+                        <hr style="border: white solid 1px">
+                        <div style="display: flex; width: 100%;justify-content: flex-end">
+                            <h4 class="prix">$17.95</h4>
+                            <button class="acheter" style="">Acheter Maintenant!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

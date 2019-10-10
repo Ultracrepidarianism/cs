@@ -1,0 +1,7 @@
+.Validation{
+    display: inline-block;
+    background-color: rgba(152,251,152,0.5);
+    border: rgba(50,205,50,0.5) solid 3px ;
+    border-radius: 33px;
+    padding: 10px
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Culte Sataniste</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/userlogin.css">
+    <link rel="stylesheet" href="css/chatbox.css">
+    <script src="https://kit.fontawesome.com/e3961f43af.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.1.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/chatbox.js"></script>
+
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 usermenu" style="margin-top: 1%;">
+            <button onclick="EtendreMenuUtilisateur()" style="border-radius: 50%; margin: 10px; box-shadow: none"><i class="far fa-user usermenubutton"></i></button>
+            <form class="hidden" name="Connexion" action="#">
+            <label>Nom d'utilisateur:</label>
+            <input type="text" name="identifiant" placeholder="NullExceptionArg">
+            <label>Mot de passe:</label>
+            <input type="password" name="mot de passe" placeholder="Abcdef1234">
+            <input type="submit" value="Se connecter" style="margin-top: 5px; background-color: darkred; border: none; color: white; border-radius: 2px">
+            <a href="unlucky.html"style="display: block; text-align: center">Mot de passe oublié ?</a>
+            <a href="inscription.html" style="display: block; text-align: center">s'inscrire</a>
+        </form>
+        </div>
+        <div class="col-sm-8">
+            <div class="row justify-content-center order-0">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="navbar-brand h4 alinks" href="membres.html">Membres</a></li>
+                            <li><a class="navbar-brand h4 alinks" href="#">ChatBox</a></li>
+                            <li><a href="index.html"><img class="logo" src="images/pentacle.png" style="margin-right: 10px"/></a></li>
+                            <li><a class="navbar-brand h4 alinks" href="contact.html">Contact</a></li>
+                            <li><a class="navbar-brand h4 alinks" href="boutique.html">Boutique</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row justify-content-center">
+                <div class="jumbotron" id="ChatBox" style="height: 600px; width: 60%">
+
+                </div>
+                <div class="jumbotron EnvoieMessage" style="width: 60%; margin-top: 5px">
+                    <div class="row" id="erreur">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2" id="labelpseudo">
+                            <label>Pseudo:</label>
+                        </div>
+                        <div class="col-sm-6" id="labelmessage">
+                            <label style="margin-left: 5px;">Message:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <input id="pseudo" type="text" pattern="[\s\S]{1,13}">
+                        </div>
+                        <div class="col-sm-6">
+                            <input id="message" type="text" style="width: 100%">
+                        </div>
+                        <button id="envoyermessage">Envoyer</button>
+                    </div>
+                    <div style="color:lightgray"><em>Vous pouvez aussi utiliser 'Entrée' pour envoyer votre message</em></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

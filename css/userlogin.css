@@ -1,0 +1,18 @@
+.userloginopen{
+    background-color: white;
+    border: 2px solid darkred;
+    border-radius: 5px;
+}
+.usermenu{
+    width: 0px;
+    height: 0px;
+}
+button{
+    border: none;
+}
+button:focus{
+    outline: none;
+}
+form[name="Connexion"] input{
+    width: 100%;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Culte Sataniste</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/userlogin.css">
+    <link rel="stylesheet" href="css/membres.css">
+    <script src="https://kit.fontawesome.com/e3961f43af.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.1.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/membres.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 usermenu" style="margin-top: 1%;">
+            <button onclick="EtendreMenuUtilisateur()" style="border-radius: 50%; margin: 10px; box-shadow: none"><i class="far fa-user usermenubutton"></i></button>
+            <form class="hidden" name="Connexion" action="#">
+                <label>Nom d'utilisateur:</label>
+                <input type="text" name="identifiant" placeholder="NullExceptionArg">
+                <label>Mot de passe:</label>
+                <input type="password" name="mot de passe" placeholder="Abcdef1234">
+                <input type="submit" value="Se connecter" style="margin-top: 5px; background-color: darkred; border: none; color: white; border-radius: 2px">
+                <a href="unlucky.html"style="display: block; text-align: center">Mot de passe oublié ?</a>
+                <a href="inscription.html" style="display: block; text-align: center">s'inscrire</a>
+            </form>
+        </div>
+        <div class="col-sm-8">
+            <div class="row justify-content-center order-0">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a class="navbar-brand h4 alinks" href="#">Membres</a></li>
+                            <li><a class="navbar-brand h4 alinks" href="chatbox.html">ChatBox</a></li>
+                            <li><a href="index.html" class="logo"><img src="images/pentacle.png" style="margin-right: 10px" width="75px" height="75px"/></a></li>
+                            <li><a class="navbar-brand h4 alinks" href="contact.html">Contact</a></li>
+                            <li><a class="navbar-brand h4 alinks" href="boutique.html">Boutique</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row" style="color: white;margin-top: 25px">
+                <div class="Magus" style="text-align: center;width: 100%">
+                    <h3>Magus/Maga</h3>
+                    <div class="row col-sm-8 offset-2">
+                        <div class="membre">
+                            <img src="images/Membres/felixbourdages.jpg" width="100px" height="100px">
+                            <p class="hidden">
+                                Felix Bourdages
+                            </p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="color: white;margin-top: 25px">
+                <div class="Magister" style="text-align: center;width: 100%">
+                    <h3>Magister/Magistra</h3>
+                    <div class="row col-sm-8 offset-2">
+                        <div class="membre">
+                            <img src="images/Membres/TristanViens.jpeg" width="100px" height="100px">
+                            <p class="hidden">Tristan Viens</p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="membre">
+                            <img src="images/Membres/GuillaumeBelzile.jpeg" width="100px" height="100px">
+                            <p class="hidden">Guillaume Belzile</p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="color: white;margin-top: 25px">
+                <div class="prêtre" style="text-align: center;width: 100%">
+                    <h3>Prêtre/Prêtresse</h3>
+                    <div class="row col-sm-8 offset-2">
+                        <div class="membre">
+                            <img src="images/Membres/JeffreyStGermain.jpeg" width="100px" height="100px">
+                            <p class="hidden">Jeffrey St-Germain</p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="membre">
+                            <img src="images/Membres/MateiMartin.jpeg" width="100px" height="100px">
+                            <p class="hidden">Matei Martin</p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="color: white;margin-top: 25px">
+                <div class="sorcier" style="text-align: center;width: 100%">
+                    <h3>Sorcier/Sorcière</h3>
+                    <div class="row col-sm-8 offset-2">
+                        <div class="membre">
+                            <img src="images/Membres/RaphaelBoutin.jpeg" width="100px" height="100px">
+                            <p class="hidden">Raphael Boutin</p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="membre">
+                            <img src="images/Membres/RenaudMorin.jpeg" width="100px" height="100px">
+                            <p class="hidden">Renaud Morin</p>
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="membre">
+                            <img src="https://dummyimage.com/100x100/888/fff" width="100px" height="100px">
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="color: white;margin-top: 25px">
+                <div class="apprenti" style="text-align: center;width: 100%">
+                    <h3>Apprenti/Apprentie</h3>
+                    <div class="row col-sm-8 offset-2">
+                        <div class="membre">
+                            <img src="https://dummyimage.com/100x100/888/fff" width="100px" height="100px">
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="membre">
+                            <img src="https://dummyimage.com/100x100/888/fff" width="100px" height="100px">
+                            <p class="hidden" style="margin-top: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan sagittis leo, sed finibus mi rhoncus quis. Curabitur blandit est nec magna imperdiet, fermentum commodo eros gravida. Etiam urna tortor, porta ut lacus vel, rutrum finibus arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="color: white;margin-top: 25px">
+                <div class="apprenti" style="text-align: center;width: 100%">
+                    <h3>Larbins</h3>
+                    <div class="row col-sm-8">
+                        <ul>
+                            <li>Severus Snape</li>
+                            <li>Gandalf Le Gris</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

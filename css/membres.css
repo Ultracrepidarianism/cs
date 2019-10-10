@@ -1,0 +1,40 @@
+.membreOuvert{
+    background-color: rgba(40,40,40,0.6);
+    border: darkred solid 2px;
+    border-radius: 2px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/*Pour que les animations fonctionnent bien il faut instancier le width & height au début */
+.membre{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.Magus{
+    display:block;
+    width: 100%;
+}
+.Magister{
+    display:block;
+    width: 100%;
+}
+.prêtre{
+    display:block;
+    width: 100%;
+}
+.sorcier{
+    display:block;
+    width: 100%;
+}
+.apprenti{
+    display:block;
+    width: 100%;
+}
+.membreInscrits{
+    display: block;
+    width: 100%;
+}
+div.membre:hover{
+    cursor: pointer;
+}
