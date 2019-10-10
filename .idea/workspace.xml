@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e50c13fb-467e-4bbd-a607-9086380512a5" name="Default Changelist" comment="" />
+    <list default="true" id="e50c13fb-467e-4bbd-a607-9086380512a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Membres/72385251_476525492932634_562241451321196544_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Membres/Capture.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Membres/JPEG_20191009_212603.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/membres.html" beforeDir="false" afterPath="$PROJECT_DIR$/membres.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +91,7 @@
       <workItem from="1570644989462" duration="3095000" />
       <workItem from="1570649377171" duration="5185000" />
       <workItem from="1570662193900" duration="10458000" />
+      <workItem from="1570674815205" duration="270000" />
     </task>
     <servers />
   </component>
@@ -96,7 +103,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
